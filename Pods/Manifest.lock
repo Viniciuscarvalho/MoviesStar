@@ -1,0 +1,42 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - KIF (3.7.1):
+    - KIF/Core (= 3.7.1)
+  - KIF/Core (3.7.1)
+  - Kingfisher (4.6.2)
+  - Nimble (7.0.3)
+  - Nimble-Snapshots (6.3.0):
+    - Nimble-Snapshots/Core (= 6.3.0)
+  - Nimble-Snapshots/Core (6.3.0):
+    - FBSnapshotTestCase (~> 2.0)
+    - Nimble (~> 7.0)
+  - Quick (1.2.0)
+  - SnapKit (4.0.0)
+  - SwiftLint (0.25.0)
+
+DEPENDENCIES:
+  - KIF
+  - Kingfisher
+  - Nimble
+  - Nimble-Snapshots
+  - Quick
+  - SnapKit (~> 4.0.0)
+  - SwiftLint
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  KIF: af73f6a04539bd205622c2e5ce5f910cc2123d4b
+  Kingfisher: 55b9c395bf8d3949676ad3861111923990ab68cf
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
+
+PODFILE CHECKSUM: 0b76f3ff4c2b6fcdbf12aae7e9c28aecc3bf35ac
+
+COCOAPODS: 1.4.0
