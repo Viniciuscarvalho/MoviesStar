@@ -1,14 +1,6 @@
-//
-//  SearchBarSpec.swift
-//  ios-trainning-projectTests
-//
-//  Created by m.marques.goncalves on 26/02/18.
-//  Copyright © 2018 Concrete - Treinamento iOS. All rights reserved.
-//
-
 import Quick
 import Nimble
-@testable import ios_trainning_project
+@testable import MoviesStar
 
 class SearchBarSpec: QuickSpec {
     

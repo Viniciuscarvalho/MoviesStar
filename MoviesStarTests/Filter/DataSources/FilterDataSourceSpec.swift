@@ -1,14 +1,6 @@
-//
-//  FilterDataSourceSpec.swift
-//  ios-trainning-projectTests
-//
-//  Created by m.marques.goncalves on 28/02/18.
-//  Copyright © 2018 Concrete - Treinamento iOS. All rights reserved.
-//
-
 import Quick
 import Nimble
-@testable import ios_trainning_project
+@testable import MoviesStar
 
 class FilterDataSourceSpec: QuickSpec {
     
@@ -21,7 +13,6 @@ class FilterDataSourceSpec: QuickSpec {
             var sut = FilterDataSource(items: items)
             
             context("when FilterDataSourceSpec is instantiated", {
-                
                 
                 it("should not be nil", closure: {
                     expect(sut).toNot(beNil())

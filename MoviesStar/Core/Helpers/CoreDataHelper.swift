@@ -1,11 +1,3 @@
-//
-//  CoreDataHelper.swift
-//  ios-trainning-project
-//
-//  Created by Vinicius Marques on 21/02/18.
-//  Copyright © 2018 Concrete - Treinamento iOS. All rights reserved.
-//
-
 import Foundation
 import CoreData
 import UIKit

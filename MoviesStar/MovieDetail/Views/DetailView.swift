@@ -1,11 +1,3 @@
-//
-//  DetailView.swift
-//  ios-trainning-project
-//
-//  Created by m.marques.goncalves on 19/02/18.
-//  Copyright © 2018 Concrete - Treinamento iOS. All rights reserved.
-//
-
 import UIKit
 import SnapKit
 

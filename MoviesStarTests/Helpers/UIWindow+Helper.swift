@@ -1,11 +1,3 @@
-//
-//  UIWindow+Helper.swift
-//  ios-trainning-projectTests
-//
-//  Created by mariana.alvarez on 2/27/18.
-//  Copyright © 2018 Concrete - Treinamento iOS. All rights reserved.
-//
-
 import Foundation
 import UIKit
 

@@ -1,17 +1,9 @@
-//
-//  FavoritesCellSpec.swift
-//  ios-trainning-projectTests
-//
-//  Created by Rafael Aparecido de Freitas  on 26/02/18.
-//  Copyright © 2018 Concrete - Treinamento iOS. All rights reserved.
-//
-
 import Foundation
 import Quick
 import Nimble
 import Nimble_Snapshots
 
-@testable import ios_trainning_project
+@testable import MoviesStar
 
 class FavoritesCellSpec: QuickSpec {
     

@@ -1,13 +1,5 @@
-//
-//  DataSourceSearchableStub.swift
-//  ios-trainning-projectTests
-//
-//  Created by m.marques.goncalves on 26/02/18.
-//  Copyright © 2018 Concrete - Treinamento iOS. All rights reserved.
-//
-
 import Foundation
-@testable import ios_trainning_project
+@testable import MoviesStar
 
 class DataSourceSearchableStub: DataSourceSearchable {
     var isSearching: Bool = false

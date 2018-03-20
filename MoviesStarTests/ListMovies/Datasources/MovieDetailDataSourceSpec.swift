@@ -1,16 +1,8 @@
-//
-//  MovieDetailDataSourceSpec.swift
-//  ios-trainning-projectTests
-//
-//  Created by Jose Freitas on 20/02/18.
-//  Copyright © 2018 Concrete - Treinamento iOS. All rights reserved.
-//
-
 import Foundation
 import Quick
 import Nimble
 
-@testable import ios_trainning_project
+@testable import MoviesStar
 
 class MovieDetailDataSourceSpec: QuickSpec {
     

@@ -15,20 +15,6 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C3E5A39E202D0A7A00A14210"
-               BuildableName = "ios-trainning-project.app"
-               BlueprintName = "ios-trainning-project"
-               ReferencedContainer = "container:ios-trainning-project.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C3E5A39E202D0A7A00A14210"
                BuildableName = "MoviesStar.app"
                BlueprintName = "MoviesStar"
                ReferencedContainer = "container:MoviesStar.xcodeproj">
@@ -83,9 +69,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C3E5A39E202D0A7A00A14210"
-            BuildableName = "ios-trainning-project.app"
-            BlueprintName = "ios-trainning-project"
-            ReferencedContainer = "container:ios-trainning-project.xcodeproj">
+            BuildableName = "MoviesStar.app"
+            BlueprintName = "MoviesStar"
+            ReferencedContainer = "container:MoviesStar.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -97,16 +83,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C3E5A39E202D0A7A00A14210"
-            BuildableName = "ios-trainning-project.app"
-            BlueprintName = "ios-trainning-project"
-            ReferencedContainer = "container:ios-trainning-project.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

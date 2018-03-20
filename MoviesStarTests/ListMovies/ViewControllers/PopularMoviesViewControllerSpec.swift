@@ -1,17 +1,9 @@
-//
-//  PopularMoviesViewControllerSpec.swift
-//  ios-trainning-projectTests
-//
-//  Created by Jose Freitas on 22/02/18.
-//  Copyright © 2018 Concrete - Treinamento iOS. All rights reserved.
-//
-
 import UIKit
 import Quick
 import Nimble
 import Nimble_Snapshots
 
-@testable import ios_trainning_project
+@testable import MoviesStar
 
 class PopularMoviesViewControllerSpec: QuickSpec {
     

@@ -1,16 +1,8 @@
-//
-//  PopularMoviesDatasourceStub.swift
-//  ios-trainning-projectTests
-//
-//  Created by Rafael Aparecido de Freitas  on 28/02/18.
-//  Copyright © 2018 Concrete - Treinamento iOS. All rights reserved.
-//
-
 import Foundation
 
 import UIKit
 
-@testable import ios_trainning_project
+@testable import MoviesStar
 
 class PopularMoviesDataSourceStub: PopularMoviesDataSource{
     

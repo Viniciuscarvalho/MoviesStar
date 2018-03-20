@@ -1,17 +1,9 @@
-//
-//  PopularMovieCellSpec.swift
-//  ios-trainning-projectTests
-//
-//  Created by mariana.alvarez on 2/15/18.
-//  Copyright © 2018 Concrete - Treinamento iOS. All rights reserved.
-//
-
 import Foundation
 import Quick
 import Nimble
 import Nimble_Snapshots
 
-@testable import ios_trainning_project
+@testable import MoviesStar
 
 class PopularMovieCellSpec: QuickSpec {
     

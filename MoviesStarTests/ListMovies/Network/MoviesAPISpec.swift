@@ -1,16 +1,8 @@
-//
-//  MoviesAPISpec.swift
-//  ios-trainning-projectTests
-//
-//  Created by Jose Freitas on 14/02/18.
-//  Copyright © 2018 Mateus Gonçalves. All rights reserved.
-//
-
 import Foundation
 import Quick
 import Nimble
 
-@testable import ios_trainning_project
+@testable import MoviesStar
 
 class MoviesAPISpec: QuickSpec{
     

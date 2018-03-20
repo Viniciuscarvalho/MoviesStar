@@ -1,15 +1,7 @@
-//
-//  MovieModelControllerSpec.swift
-//  ios-trainning-projectTests
-//
-//  Created by Rafael Aparecido de Freitas  on 09/02/18.
-//  Copyright © 2018 Concrete - Treinamento iOS. All rights reserved.
-//
-
 import Foundation
 import Quick
 import Nimble
-@testable import ios_trainning_project
+@testable import MoviesStar
 
 class MovieModelControllerSpec:QuickSpec{
     

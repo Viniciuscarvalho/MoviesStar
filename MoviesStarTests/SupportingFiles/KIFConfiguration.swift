@@ -1,11 +1,3 @@
-//
-//  KIFConfiguration.swift
-//  ios-trainning-projectTests
-//
-//  Created by mariana.alvarez on 2/28/18.
-//  Copyright © 2018 Concrete - Treinamento iOS. All rights reserved.
-//
-
 import Quick
 import KIF
 

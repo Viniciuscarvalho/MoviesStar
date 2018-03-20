@@ -1,18 +1,10 @@
-//
-//  CoreDataContextMock.swift
-//  ios-trainning-projectTests
-//
-//  Created by Rafael Aparecido de Freitas  on 28/02/18.
-//  Copyright © 2018 Concrete - Treinamento iOS. All rights reserved.
-//
-
 import Foundation
 import CoreData
 
 class CoreDataContextMock {
     
     func createManagedObjectContext() -> NSManagedObjectContext {
-        let url = Bundle.main.url(forResource: "ios_trainning_project", withExtension: "momd")!
+        let url = Bundle.main.url(forResource: "MoviesStar", withExtension: "momd")!
         let managedObjectModel = NSManagedObjectModel(contentsOf: url)
         let persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: managedObjectModel!)
         

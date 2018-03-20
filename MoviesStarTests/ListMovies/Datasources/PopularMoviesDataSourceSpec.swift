@@ -1,16 +1,8 @@
-//
-//  PopularMoviesDataSourceSpec.swift
-//  ios-trainning-projectTests
-//
-//  Created by mariana.alvarez on 2/14/18.
-//  Copyright © 2018 Concrete - Treinamento iOS. All rights reserved.
-//
-
 import Foundation
 import Quick
 import Nimble
 
-@testable import ios_trainning_project
+@testable import MoviesStar
 
 class PopularMoviesDataSourceSpec: QuickSpec {
     
