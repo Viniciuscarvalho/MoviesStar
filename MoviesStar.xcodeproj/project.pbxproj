@@ -13,6 +13,7 @@
 		2F058BD72035C3C7004F523D /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F058BD62035C3C7004F523D /* NibLoadable.swift */; };
 		2F058BDE20373973004F523D /* PopularMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F058BDD20373973004F523D /* PopularMovieView.swift */; };
 		2F51D04A2061A6B1008363E4 /* GenreControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F51D0492061A6B0008363E4 /* GenreControllerSpec.swift */; };
+		2FA0F178207E488B00809C85 /* PopularMoviesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA0F177207E488B00809C85 /* PopularMoviesPresenter.swift */; };
 		2FD829FE203DE0D100DE38B7 /* MovieCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD829FD203DE0D100DE38B7 /* MovieCoreDataManager.swift */; };
 		2FD829FF203DF6D300DE38B7 /* moviesstar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3E5A3A9202D0A7A00A14210 /* moviesstar.xcdatamodeld */; };
 		2FE531F1203DB97400405D03 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE531F0203DB97400405D03 /* CoreDataHelper.swift */; };
@@ -119,6 +120,7 @@
 		2F058BD62035C3C7004F523D /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		2F058BDD20373973004F523D /* PopularMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieView.swift; sourceTree = "<group>"; };
 		2F51D0492061A6B0008363E4 /* GenreControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreControllerSpec.swift; sourceTree = "<group>"; };
+		2FA0F177207E488B00809C85 /* PopularMoviesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesPresenter.swift; sourceTree = "<group>"; };
 		2FD829FD203DE0D100DE38B7 /* MovieCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCoreDataManager.swift; sourceTree = "<group>"; };
 		2FE531F0203DB97400405D03 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		69C22E7DBC8C057889FAEEF1 /* Pods-MoviesStarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoviesStarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoviesStarTests/Pods-MoviesStarTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -273,6 +275,14 @@
 				EA74076320360A3500F18FBF /* Info.plist */,
 			);
 			path = Essentials;
+			sourceTree = "<group>";
+		};
+		2FA0F176207E486E00809C85 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				2FA0F177207E488B00809C85 /* PopularMoviesPresenter.swift */,
+			);
+			name = Presenters;
 			sourceTree = "<group>";
 		};
 		2FD829FC203DE02700DE38B7 /* Managers */ = {
@@ -558,6 +568,7 @@
 		D12DACC0202DE27E00368D1F /* ListMovies */ = {
 			isa = PBXGroup;
 			children = (
+				2FA0F176207E486E00809C85 /* Presenters */,
 				D12DACC2202DE29E00368D1F /* Datasources */,
 				D12DACC6202DE2BB00368D1F /* ViewControllers */,
 				D12DACC5202DE2B300368D1F /* Views */,
@@ -1092,6 +1103,7 @@
 				EA74076920360A4800F18FBF /* Assets.swift in Sources */,
 				2FE531F1203DB97400405D03 /* CoreDataHelper.swift in Sources */,
 				D181B19D20447C8C00F9CAA3 /* ModelProtocol.swift in Sources */,
+				2FA0F178207E488B00809C85 /* PopularMoviesPresenter.swift in Sources */,
 				EA41E3882045F61B00062B16 /* CodeView.swift in Sources */,
 				C4EC796C202E19BF0001F35B /* PopularMoviesDataSource.swift in Sources */,
 				2FD829FE203DE0D100DE38B7 /* MovieCoreDataManager.swift in Sources */,
@@ -1239,7 +1251,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1290,7 +1302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1304,7 +1316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 24Q8F4D954;
 				INFOPLIST_FILE = "$(SRCROOT)/MoviesStar/Shared/Essentials/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1322,7 +1334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 24Q8F4D954;
 				INFOPLIST_FILE = "$(SRCROOT)/MoviesStar/Shared/Essentials/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
