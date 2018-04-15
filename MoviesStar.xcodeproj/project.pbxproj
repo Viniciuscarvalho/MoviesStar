@@ -77,6 +77,7 @@
 		EA128BB0203C6E8900800F59 /* MovieDetailDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA128BAF203C6E8900800F59 /* MovieDetailDataSource.swift */; };
 		EA128BB2203C90EC00800F59 /* MovieDetailDataSourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA128BB1203C90EC00800F59 /* MovieDetailDataSourceSpec.swift */; };
 		EA41E3882045F61B00062B16 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41E3872045F61B00062B16 /* CodeView.swift */; };
+		EA647A1F2083F4E300FCCC99 /* PopularMoviesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA647A1E2083F4E300FCCC99 /* PopularMoviesUseCase.swift */; };
 		EA65D14C20482EF500510C65 /* MovieListNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA65D14B20482EF500510C65 /* MovieListNavigator.swift */; };
 		EA65D14E20483C5000510C65 /* MovieListNavigatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA65D14D20483C5000510C65 /* MovieListNavigatorSpec.swift */; };
 		EA65D150204843A700510C65 /* NavigationControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA65D14F204843A700510C65 /* NavigationControllerMock.swift */; };
@@ -194,6 +195,7 @@
 		EA128BAF203C6E8900800F59 /* MovieDetailDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailDataSource.swift; sourceTree = "<group>"; };
 		EA128BB1203C90EC00800F59 /* MovieDetailDataSourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailDataSourceSpec.swift; sourceTree = "<group>"; };
 		EA41E3872045F61B00062B16 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		EA647A1E2083F4E300FCCC99 /* PopularMoviesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesUseCase.swift; sourceTree = "<group>"; };
 		EA65D14B20482EF500510C65 /* MovieListNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListNavigator.swift; sourceTree = "<group>"; };
 		EA65D14D20483C5000510C65 /* MovieListNavigatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListNavigatorSpec.swift; sourceTree = "<group>"; };
 		EA65D14F204843A700510C65 /* NavigationControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerMock.swift; sourceTree = "<group>"; };
@@ -568,6 +570,7 @@
 		D12DACC0202DE27E00368D1F /* ListMovies */ = {
 			isa = PBXGroup;
 			children = (
+				EA647A1D2083F0C400FCCC99 /* UseCases */,
 				2FA0F176207E486E00809C85 /* Presenters */,
 				D12DACC2202DE29E00368D1F /* Datasources */,
 				D12DACC6202DE2BB00368D1F /* ViewControllers */,
@@ -706,6 +709,14 @@
 				74F1A0E120472FDC00FCB9A6 /* DataSourceFilterable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EA647A1D2083F0C400FCCC99 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				EA647A1E2083F4E300FCCC99 /* PopularMoviesUseCase.swift */,
+			);
+			name = UseCases;
 			sourceTree = "<group>";
 		};
 		EA65D14A20482E9000510C65 /* Navigators */ = {
@@ -1127,6 +1138,7 @@
 				74F1A0C62045EC3500FCB9A6 /* FilterViewController.swift in Sources */,
 				74F1A0CF2045FD3800FCB9A6 /* FilterView.swift in Sources */,
 				EAFA836120443A17004168F1 /* FavoritesViewController.swift in Sources */,
+				EA647A1F2083F4E300FCCC99 /* PopularMoviesUseCase.swift in Sources */,
 				EAFA835E204436F6004168F1 /* FavoritesView.swift in Sources */,
 				EA128BB0203C6E8900800F59 /* MovieDetailDataSource.swift in Sources */,
 				EA74076A20360A4800F18FBF /* UIColor+Pallete.swift in Sources */,
@@ -1316,7 +1328,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 24Q8F4D954;
+				DEVELOPMENT_TEAM = 6U8286L9PF;
 				INFOPLIST_FILE = "$(SRCROOT)/MoviesStar/Shared/Essentials/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1334,7 +1346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 24Q8F4D954;
+				DEVELOPMENT_TEAM = 6U8286L9PF;
 				INFOPLIST_FILE = "$(SRCROOT)/MoviesStar/Shared/Essentials/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

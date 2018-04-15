@@ -7,7 +7,6 @@ class PopularMoviesViewController: UIViewController {
     var moviesDataSource: PopularMoviesDataSource?
     var detailDataSource: MovieDetailDataSource?
     var api: MoviesAPI = MoviesAPI()
-    var presenter: PopularMoviesPresenter
     
     private let navigator: MovieListNavigator
     
@@ -27,7 +26,6 @@ class PopularMoviesViewController: UIViewController {
         self.loadGenres()
         self.loadMovies()
         self.setupNotification()
-        self.presenter.displayStates(.loading)
     }
     
     override func loadView() {

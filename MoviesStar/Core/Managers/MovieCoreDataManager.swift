@@ -38,7 +38,6 @@ class MovieCoreDataManager {
         }
     }
     
-
     static private func fetch(predicate: NSPredicate?) -> [MovieEntity] {
         
         let fetchRequest: NSFetchRequest = MovieEntity.fetchRequest()

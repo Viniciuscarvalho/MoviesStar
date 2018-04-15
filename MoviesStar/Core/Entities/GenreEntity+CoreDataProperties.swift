@@ -1,7 +1,6 @@
 import Foundation
 import CoreData
 
-
 extension GenreEntity {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<GenreEntity> {
@@ -14,7 +13,6 @@ extension GenreEntity {
 
 }
 
-// MARK: Generated accessors for movies
 extension GenreEntity {
 
     @objc(addMoviesObject:)
