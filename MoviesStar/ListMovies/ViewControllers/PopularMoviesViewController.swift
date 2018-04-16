@@ -4,10 +4,39 @@ import SnapKit
 
 class PopularMoviesViewController: UIViewController {
     
+    var noSearchResultsView: ErrorView?
+    var popularMovieView: PopularMovieView = PopularMovieView()
+    
+    enum ViewStates{
+        case loading
+        case ready
+        case error
+        case noSearchResults
+    }
+    
+    var currentState: ViewStates = .loading {
+        didSet{
+            switch currentState {
+            case .loading:
+                self.popularMovieView.startLoading()
+                self.noSearchResultsView?.hide()
+            case .ready:
+                self.popularMovieView.stopLoading()
+                self.noSearchResultsView?.hide()
+            case .error:
+                self.popularMovieView.stopLoading()
+                self.noSearchResultsView?.hide()
+                let _ = ErrorView(in: self.view, dismissAfter: 4000)
+            case .noSearchResults:
+                self.popularMovieView.stopLoading()
+                self.noSearchResultsView?.show()
+            }
+        }
+    }
+    
     var moviesDataSource: PopularMoviesDataSource?
     var detailDataSource: MovieDetailDataSource?
     var api: MoviesAPI = MoviesAPI()
-    var presenter: PopularMoviesPresenter
     
     private let navigator: MovieListNavigator
     
@@ -21,31 +50,29 @@ class PopularMoviesViewController: UIViewController {
         return nil
     }
     
+    override func loadView() {
+        self.view = self.popularMovieView
+        self.noSearchResultsView = ErrorView(in: popularMovieView, errorType: .NoSearchResults, afterView: popularMovieView.searchBar)
+    }
+    
     override func viewDidLoad() {
         self.setupDelegateAndDataSource()
         self.title = "Movies"
         self.loadGenres()
         self.loadMovies()
         self.setupNotification()
-        self.presenter.displayStates(.loading)
-    }
-    
-    override func loadView() {
-        self.presenter = self.presenter.popularMovieView
-        self.view = presenter.popularMovieView
-        self.presenter.noSearchResultsView = ErrorView(in: presenter.popularMovieView,
-                                                       errorType: .NoSearchResults,
-                                                       afterView: presenter.popularMovieView.searchBar)
+        self.currentState = .loading
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         moviesDataSource?.reloadCollection()
+        
     }
     
     fileprivate func setupDelegateAndDataSource() {
-        self.moviesDataSource = PopularMoviesDataSource(with: [], collectionView: presenter.popularMovieView.collectionView)
-        self.presenter.popularMovieView.searchBar.dataSource = moviesDataSource
+        self.moviesDataSource = PopularMoviesDataSource(with: [], collectionView: popularMovieView.collectionView)
+        self.popularMovieView.searchBar.dataSource = moviesDataSource
     }
     
     fileprivate func setupNotification() {
@@ -79,10 +106,10 @@ class PopularMoviesViewController: UIViewController {
             DispatchQueue.main.async {
                 switch result {
                 case .success(let movies):
-                    self.presenter.currentState = .ready
+                    self.currentState = .ready
                     self.moviesDataSource?.addMovies(newMovies: movies)
                 case .error(let error):
-                    self.presenter.currentState = .error
+                    self.currentState = .error
                     switch error {
                     case .customError(let error):
                         print("A custom error ocurred on loadMovies: \(error)")
@@ -106,9 +133,9 @@ class PopularMoviesViewController: UIViewController {
     
     @objc func changeCurrenteState() {
         if self.moviesDataSource?.isSearching == true, self.moviesDataSource?.filteredMovies.count == 0 {
-            self.presenter.currentState = .noSearchResults
+            self.currentState = .noSearchResults
         } else {
-            self.presenter.currentState = .ready
+            self.currentState = .ready
         }
     }
 }
