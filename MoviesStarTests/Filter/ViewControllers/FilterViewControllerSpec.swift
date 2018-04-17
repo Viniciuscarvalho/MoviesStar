@@ -13,7 +13,7 @@ class FilterViewControllerSpec: QuickSpec {
             context("when UI is loaded", {
                 
                 beforeEach {
-                    let dataSource = FilterDataSource(items: ["2018", "2017"])
+                    let dataSource = DataSourceFilterable(items: ["2018", "2017"])
                     let sut = FilterViewController(tableViewDataSource: dataSource)
                     UIWindow.setTestWindow(rootViewController: sut)
                 }

@@ -10,7 +10,7 @@ class FilterDataSourceSpec: QuickSpec {
             let item1 = "2018"
             let item2 = "2017"
             let items = [item1, item2]
-            var sut = FilterDataSource(items: items)
+            var sut = DataSourceFilterable(items: items)
             
             context("when FilterDataSourceSpec is instantiated", {
                 

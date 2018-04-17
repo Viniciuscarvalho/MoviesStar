@@ -1,16 +1,14 @@
 import Foundation
 
-protocol DataSourceFilterable {
-    var items: [String] {get}
-    var selectedItem: String? {get set}
+struct DataSourceFilterable {
+    var items: [String]
+    var selectedItem: String?
     
-    mutating func numberOfItems() -> Int
-    func getItem(byIndexPath indexPath: IndexPath) -> String
-    mutating func select(item: String)
-    mutating func deselectItem()
-}
-
-extension DataSourceFilterable {
+    init(items: [String] = [], selectedItem: String? = nil) {
+        self.items = items
+        self.selectedItem = selectedItem
+    }
+    
     func numberOfItems() -> Int {
         return items.count
     }
@@ -27,3 +25,4 @@ extension DataSourceFilterable {
         selectedItem = nil
     }
 }
+

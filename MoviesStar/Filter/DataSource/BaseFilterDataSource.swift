@@ -2,13 +2,8 @@ import UIKit
 
 class BaseFilterDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
     
-    fileprivate var dataSource: DataSourceFilterable
-    
-    init(dataSource: DataSourceFilterable) {
-        self.dataSource = dataSource
-        super.init()
-    }
-    
+    var dataSource = DataSourceFilterable()
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource.numberOfItems()
     }

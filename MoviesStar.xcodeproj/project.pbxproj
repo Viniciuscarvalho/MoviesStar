@@ -27,7 +27,6 @@
 		74F1A0C12045E94B00FCB9A6 /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F1A0C02045E94B00FCB9A6 /* FilterButton.swift */; };
 		74F1A0C62045EC3500FCB9A6 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F1A0C52045EC3500FCB9A6 /* FilterViewController.swift */; };
 		74F1A0C92045ECD700FCB9A6 /* BasicTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F1A0C82045ECD700FCB9A6 /* BasicTableView.swift */; };
-		74F1A0CB2045EF1B00FCB9A6 /* FilterDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F1A0CA2045EF1B00FCB9A6 /* FilterDataSource.swift */; };
 		74F1A0CD2045F58700FCB9A6 /* BaseFilterDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F1A0CC2045F58700FCB9A6 /* BaseFilterDataSource.swift */; };
 		74F1A0CF2045FD3800FCB9A6 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F1A0CE2045FD3800FCB9A6 /* FilterView.swift */; };
 		74F1A0DC2046F37900FCB9A6 /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F1A0DB2046F37900FCB9A6 /* BasicTableViewCell.swift */; };
@@ -134,7 +133,6 @@
 		74F1A0C02045E94B00FCB9A6 /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
 		74F1A0C52045EC3500FCB9A6 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		74F1A0C82045ECD700FCB9A6 /* BasicTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableView.swift; sourceTree = "<group>"; };
-		74F1A0CA2045EF1B00FCB9A6 /* FilterDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDataSource.swift; sourceTree = "<group>"; };
 		74F1A0CC2045F58700FCB9A6 /* BaseFilterDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseFilterDataSource.swift; sourceTree = "<group>"; };
 		74F1A0CE2045FD3800FCB9A6 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		74F1A0DB2046F37900FCB9A6 /* BasicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableViewCell.swift; sourceTree = "<group>"; };
@@ -386,7 +384,6 @@
 		74F1A0C42045EC1E00FCB9A6 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				74F1A0CA2045EF1B00FCB9A6 /* FilterDataSource.swift */,
 				74F1A0CC2045F58700FCB9A6 /* BaseFilterDataSource.swift */,
 			);
 			path = DataSource;
@@ -1072,7 +1069,6 @@
 				743B0A32203B76830093F17E /* Date+Extension.swift in Sources */,
 				74F1A0E02047181200FCB9A6 /* FilterCategoriesViewController.swift in Sources */,
 				74F1A0DE204700C100FCB9A6 /* UIView+Extension.swift in Sources */,
-				74F1A0CB2045EF1B00FCB9A6 /* FilterDataSource.swift in Sources */,
 				D19FB79E2045F5B7005B502E /* GenreEntity+CoreDataProperties.swift in Sources */,
 				C4EC796F202E1D110001F35B /* PopularMovieCell.swift in Sources */,
 				74F1A0CD2045F58700FCB9A6 /* BaseFilterDataSource.swift in Sources */,

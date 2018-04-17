@@ -17,8 +17,8 @@ class FilterCategoriesViewController: UIViewController {
     
     fileprivate(set) var categories: [FilterCategory] = [.date, .genre]
     fileprivate(set) var filterView: FilterView?
-    fileprivate var yearDataSource: FilterDataSource?
-    fileprivate var genreDataSource: FilterDataSource?
+    fileprivate var yearDataSource: BaseFilterDataSource?
+    fileprivate var genreDataSource: BaseFilterDataSource?
     fileprivate var movieController: MovieController
     fileprivate var genreController: GenreController
     
@@ -66,11 +66,11 @@ class FilterCategoriesViewController: UIViewController {
     
     fileprivate func getFilterInfo() -> [String: Any] {
         var items: [String: Any] = [:]
-        if let year = self.yearDataSource?.selectedItem {
+        if let year = self.yearDataSource?.dataSource.selectedItem {
             items[FilterCategory.date.rawValue] = year
         }
         
-        if let genre = self.genreDataSource?.selectedItem {
+        if let genre = self.genreDataSource?.dataSource.selectedItem {
             items[FilterCategory.genre.rawValue] = genre
         }
         return items
@@ -91,16 +91,17 @@ class FilterCategoriesViewController: UIViewController {
     fileprivate func buildDataSource(toCategory category: FilterCategory, items: [String]) {
         switch category {
         case .date:
-            self.yearDataSource = FilterDataSource(items: items)
+            self.yearDataSource = BaseFilterDataSource()
+            self.yearDataSource?.dataSource.items = items
         case .genre:
-            self.genreDataSource = FilterDataSource(items: items)
+            self.genreDataSource = BaseFilterDataSource()
+            self.genreDataSource?.dataSource.items = items
         }
     }
     
     func showFilterViewController(category: FilterCategory) {
         if let yearDataSource = self.yearDataSource, let genreDataSource = self.genreDataSource {
             var filterViewController: FilterViewController
-            
             switch category {
             case .date:
                 filterViewController = FilterViewController(tableViewDataSource: yearDataSource)
@@ -133,9 +134,9 @@ extension FilterCategoriesViewController: UITableViewDataSource {
     func getCustomInfo(byCategory category: FilterCategory) -> String? {
         switch category {
         case .date:
-            return self.yearDataSource?.selectedItem
+            return self.yearDataSource?.dataSource.selectedItem
         case .genre:
-            return self.genreDataSource?.selectedItem
+            return self.genreDataSource?.dataSource.selectedItem
         }
     }
 }
